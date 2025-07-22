@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM('* * * * *') // Check every 5 minutes for changes
+        pollSCM('* * * * *') // Check minutes for changes
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-org/your-repo.git', branch: 'main'
+                git url: 'https://github.com/pavan11133/PollScm.git', branch: 'main'
             }
         }
 
