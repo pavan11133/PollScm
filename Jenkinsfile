@@ -16,7 +16,8 @@ pipeline {
             steps {
                 echo 'Running deployment script...'
                 sh 'ls -l Deploy.sh'
-                echo 'sudo chmod +x Deploy.sh'
+                echo 'chmod +x Deploy.sh'
+                sh 'ls -l Deploy.sh'
                 sh './Deploy.sh'
             }
         }
