@@ -15,6 +15,7 @@ pipeline {
         stage('Run Script') {
             steps {
                 echo 'Running deployment script...'
+                sh 'ls -l Deploy.sh'
                 echo 'chmod +x Deploy.sh'
                 sh './Deploy.sh'
             }
