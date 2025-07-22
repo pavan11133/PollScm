@@ -1,3 +1,4 @@
-sh 'pwd'
-sh 'mkdir first'
-sh 'pwd'
+#!/bin/bash
+pwd
+mkdir -p first
+pwd
